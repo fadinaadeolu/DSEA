@@ -1,6 +1,6 @@
 import pandas as pd
 penguins = pd.read_csv('dataset/penguins_lter.csv')
-
+penguins = penguins.dropna()
 # Ordinal feature encoding
 # https://www.kaggle.com/pratik1120/penguin-dataset-eda-classification-and-clustering
 df = penguins.copy()
