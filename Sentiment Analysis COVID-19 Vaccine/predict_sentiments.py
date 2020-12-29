@@ -12,8 +12,7 @@ from keras.preprocessing.sequence import pad_sequences
 from keras.models import load_model
 
 # Import COVID-19 and vaccine tweets
-tweets_covid_df = pd.read_csv("data/tweets_covid_19.csv", encoding="UTF-8")
-tweets_covid_df = tweets_covid_df.iloc[:,:]
+tweets_covid_df = pd.read_csv("data/tweets_covid_19_2020-12-20.csv", encoding="UTF-8")
 tweets_covid = tweets_covid_df[["tweet"]]
 
 # Clean up tweets
@@ -52,4 +51,5 @@ for twt in tweets_covid_df["clean_tweet"]:
     print(counter)
     
 tweets_covid_df["sentiment"] = sentiments
-tweets_covid_df.to_csv("./data/covid_tweets_with_sentiment.csv", header=True, index=False)
+tweets_covid_df.to_csv("./data/covid_tweets_with_sentiment_12_20.csv", header=True, index=False)
+input("press enter to close: ")
