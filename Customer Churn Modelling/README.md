@@ -1,6 +1,7 @@
 ## Churn Modelling
 
-- **Goal:** Predict customers who are likely to close their bank account.
+**Goal**
+ predict whether the individual customer will leave the bank or remain using the Artificial Neural Network that can predict, based on the geo-demographic and transactional details of the customer.
 
 - **Customer Data**
 
