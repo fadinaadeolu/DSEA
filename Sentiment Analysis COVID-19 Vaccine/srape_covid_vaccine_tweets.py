@@ -5,7 +5,7 @@ start = input("Enter start date (YYYY-MM-DD): ")
 def scrape_twitter(start):
     
     tweets_list = []
-    for tweet in sntwitter.TwitterSearchScraper("(covid-19 vaccine) OR #vaccine max-results:3000000 since:{}".format(start)).get_items():
+    for tweet in sntwitter.TwitterSearchScraper("(covid-19 vaccine) OR #vaccine since:{}".format(start)).get_items():
         tweets_list.append([tweet.id,
                             tweet.date,
                             tweet.content,
